@@ -13,7 +13,7 @@ export default function LayoutContainer({ children }: { children: any }) {
         <nav>
           <ul>
             <li onClick={() => navigate("/")}>
-              <span className={window.location.pathname === "/" ? "active" : ""} >Inventry</span>
+              <span className={window.location.pathname === "/" ? "active" : ""} >Inventory</span>
             </li>
             <li onClick={() => navigate("/view-all-orders")}>
               <span className={window.location.pathname === "/view-all-orders" ? "active" : ""} >View all orders</span>
