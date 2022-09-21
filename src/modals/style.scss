@@ -1,0 +1,46 @@
+.modal-content {
+  padding: 0 20px 0 40px;
+
+  .item-detail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0 5px;
+
+    span {
+      &.bold {
+        width: 79px;
+      }
+    }
+  }
+}
+
+.modal-footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+.quantitybtn {
+    display: flex;
+    align-items: center;
+  .ant-input {
+    width: 50px;
+    height: 23px;
+    text-align: center;
+    border-radius: 0px;
+    border: 1px solid #1890ff;
+  }
+  .ant-btn-icon-only.ant-btn-sm {
+    width: 25px;
+    height: 23px;
+    text-align: center;
+    border-radius: 0px;
+    border: 1px solid #1890ff;
+  }
+}

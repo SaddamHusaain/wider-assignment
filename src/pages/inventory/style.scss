@@ -1,0 +1,265 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    color: #fff;
+  }
+  nav {
+    display: flex;
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+
+      li {
+        cursor: pointer;
+        margin-right: 14px;
+
+        span {
+          color: #fff;
+          padding: 10px 15px;
+          border-radius: 5px;
+          &:hover {
+            background-color: #1890ff;
+          }
+          &.active {
+            background-color: #1890ff;
+          }
+        }
+
+        span {
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+.view-order {
+  // font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-weight: 700;
+  position: relative;
+  background-color: #008000;
+  border-radius: 5px;
+
+  .cartcount {
+    background-color: #ffffff;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: -10px;
+    line-height: 24px;
+    border-radius: 50%;
+    left: 110px;
+  }
+}
+
+.content {
+  padding: 15px 50px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  overflow: auto;
+
+  .ant-card {
+    border-radius: 10px;
+    max-height: 364px;
+  }
+
+  .ant-card-cover {
+    height: 150px;
+
+    img {
+      max-height: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  .ant-card-body {
+    padding: 20px 20px 70px;
+    max-height: 364px;
+
+    .label {
+      padding-right: 5px;
+    }
+
+    .details {
+      justify-content: space-between;
+    }
+
+    .descriptions {
+      padding: 10px 0;
+      height: 80px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+    }
+  }
+
+  .ant-card-actions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .empty {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dotted #ccc;
+    cursor: pointer;
+
+    svg {
+      height: 120px;
+      width: 120px;
+      color: #ccc;
+    }
+
+    .add-item {
+      padding-top: 15px;
+      font-size: 24px;
+      color: #ddd;
+    }
+  }
+}
+
+.empty-card {
+  .ant-card-body {
+    height: 100% !important;
+    padding: 15px;
+  }
+}
+
+.card-drawer {
+  display: flex;
+  gap: 10px;
+  position: relative;
+
+  .ant-card-cover {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .ant-card-body {
+    padding: 10px;
+
+    .discription {
+      height: 38px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+      line-height: 18px;
+    }
+  }
+}
+
+.ant-layout-content {
+  flex: auto;
+  min-height: 0;
+  height: calc(100vh - 64px) !important;
+  overflow-y: scroll;
+}
+
+.ant-table-content {
+  .ant-table-thead {
+    tr {
+      .ant-table-cell {
+        background-color: #cccccc99;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.ant-table-thead th.ant-table-column-has-sorters:hover {
+  background: #cccccc99 !important;
+}
+.drawer-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  //   height: 120px;
+  padding: 16px 5px;
+  border-top: 1px solid #8080804a;
+  width: 100%;
+  //   background-color: rgba(128, 128, 128, 0.408);
+  .order-placement {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+.product-item {
+  height: calc(100% - 120px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 20px;
+    border-radius: 10px;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .ant-card-bordered {
+    border: 1px solid #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .ant-card-body {
+    width: 100%;
+  }
+}
+.ant-space.ant-space-vertical {
+  width: 100%;
+}
+.spacebtwn {
+  display: flex;
+  justify-content: space-between;
+}
+.delicon {
+  cursor: pointer;
+}
+.quantitybtn {
+  display: flex;
+  align-items: center;
+
+  .ant-input {
+    width: 50px;
+    height: 23px;
+    text-align: center;
+    border-radius: 0px;
+    border: 1px solid #1890ff;
+  }
+
+  .ant-btn-icon-only.ant-btn-sm {
+    width: 25px;
+    height: 23px;
+    text-align: center;
+    border-radius: 0px;
+    border: 1px solid #1890ff;
+  }
+}
+
